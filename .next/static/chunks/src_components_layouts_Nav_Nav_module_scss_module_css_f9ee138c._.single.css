@@ -1,0 +1,165 @@
+/* [project]/src/components/layouts/Nav/Nav.module.scss.module.css [app-client] (css) */
+.Nav-module-scss-module__UAOa4a__navbar {
+  align-items: center;
+  gap: 2rem;
+  display: flex;
+}
+
+.Nav-module-scss-module__UAOa4a__navbar__link {
+  font-weight: 500;
+  text-decoration: none;
+  transition: color .3s;
+}
+
+.Nav-module-scss-module__UAOa4a__navbar__link:hover {
+  color: #00c9a7;
+}
+
+.Nav-module-scss-module__UAOa4a__navMobile {
+  position: relative;
+}
+
+.Nav-module-scss-module__UAOa4a__navMobile__burger-button {
+  cursor: pointer;
+  z-index: 100;
+  background: none;
+  border: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  display: flex;
+}
+
+.Nav-module-scss-module__UAOa4a__navMobile__burger-button .Nav-module-scss-module__UAOa4a__line {
+  transform-origin: 1px;
+  background: #1a1a1a;
+  border-radius: 10px;
+  width: 2rem;
+  height: .25rem;
+  transition: all .3s linear;
+  position: relative;
+}
+
+.Nav-module-scss-module__UAOa4a__navMobile__burger-button .Nav-module-scss-module__UAOa4a__line.Nav-module-scss-module__UAOa4a__active {
+  background: #f7f2ee;
+}
+
+.Nav-module-scss-module__UAOa4a__navMobile__burger-button.Nav-module-scss-module__UAOa4a__active span:first-child {
+  transform: rotate(45deg);
+}
+
+.Nav-module-scss-module__UAOa4a__navMobile__burger-button.Nav-module-scss-module__UAOa4a__active span:nth-child(2) {
+  opacity: 0;
+}
+
+.Nav-module-scss-module__UAOa4a__navMobile__burger-button.Nav-module-scss-module__UAOa4a__active span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.Nav-module-scss-module__UAOa4a__navMobile__menu-overlay {
+  z-index: 101;
+  opacity: 0;
+  visibility: hidden;
+  background: #00000080;
+  width: 100vw;
+  height: 100vh;
+  transition: all .3s;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.Nav-module-scss-module__UAOa4a__navMobile__menu-overlay.Nav-module-scss-module__UAOa4a__open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.Nav-module-scss-module__UAOa4a__navMobile__mobile-menu {
+  background: var(--nav-background);
+  z-index: 102;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  transition: right .3s;
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: -100%;
+}
+
+.Nav-module-scss-module__UAOa4a__navMobile__mobile-menu.Nav-module-scss-module__UAOa4a__open {
+  right: 0;
+}
+
+.Nav-module-scss-module__UAOa4a__navMobile__menu-header {
+  border-bottom: 1px solid #eee;
+  justify-content: flex-end;
+  padding: 1rem;
+  display: flex;
+}
+
+.Nav-module-scss-module__UAOa4a__navMobile__close-button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: .5rem;
+  font-size: 2rem;
+}
+
+.Nav-module-scss-module__UAOa4a__navMobile__close-button:hover {
+  color: #00c9a7;
+}
+
+.Nav-module-scss-module__UAOa4a__navMobile__menu-links {
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+  display: flex;
+}
+
+.Nav-module-scss-module__UAOa4a__navMobile__mobile-nav-link {
+  border-bottom: 1px solid #eee;
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color .3s;
+}
+
+.Nav-module-scss-module__UAOa4a__navMobile__mobile-nav-link:hover {
+  color: #00c9a7;
+}
+
+.Nav-module-scss-module__UAOa4a__overlay {
+  z-index: 9999;
+  background: #00c9a7;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  inset: 0;
+}
+
+.Nav-module-scss-module__UAOa4a__overlay__content {
+  text-align: center;
+  color: #fff;
+}
+
+.Nav-module-scss-module__UAOa4a__overlay__logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.Nav-module-scss-module__UAOa4a__overlay__label {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+html.dark .Nav-module-scss-module__UAOa4a__navMobile__mobile-menu {
+  background-color: #1a1a1a;
+}
+
+/*# sourceMappingURL=src_components_layouts_Nav_Nav_module_scss_module_css_f9ee138c._.single.css.map*/

@@ -1,0 +1,72 @@
+/* [project]/src/components/sections/Skills/Skill/Skill.module.scss.module.css [app-client] (css) */
+.Skill-module-scss-module__WU-rBW__section {
+  grid-template: "title"
+                 "text" 1fr
+                 "tags"
+                 / 1fr;
+  gap: 6vw 0;
+  width: 100%;
+  padding: 2rem;
+  display: grid;
+}
+
+@media (width >= 769px) {
+  .Skill-module-scss-module__WU-rBW__section {
+    padding: 4rem 2rem;
+  }
+}
+
+.Skill-module-scss-module__WU-rBW__section h4 {
+  grid-area: title;
+  margin: 0;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.Skill-module-scss-module__WU-rBW__section .Skill-module-scss-module__WU-rBW__description {
+  grid-area: text;
+}
+
+.Skill-module-scss-module__WU-rBW__section .Skill-module-scss-module__WU-rBW__description p {
+  margin-bottom: 1rem;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.Skill-module-scss-module__WU-rBW__section .Skill-module-scss-module__WU-rBW__description p:last-child {
+  margin-bottom: 0;
+}
+
+.Skill-module-scss-module__WU-rBW__section .Skill-module-scss-module__WU-rBW__tags {
+  flex-wrap: wrap;
+  grid-area: tags;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.Skill-module-scss-module__WU-rBW__section .Skill-module-scss-module__WU-rBW__tags > li {
+  color: var(--color);
+  --height: max(2rem, 2.5vw);
+  border: clamp(.1rem, .3vw, .3rem) solid var(--color);
+  border-radius: var(--height);
+  text-transform: uppercase;
+  font-size: max(1rem, 1.57vw);
+  line-height: var(--height);
+  align-items: center;
+  padding: 0 max(1rem, 1.75vw);
+  display: flex;
+}
+
+@media (width >= 769px) {
+  .Skill-module-scss-module__WU-rBW__section .Skill-module-scss-module__WU-rBW__tags > li {
+    --height: max(3rem, 3.5vw);
+    border-radius: var(--height);
+    padding: 0 max(1rem, 1.25vw);
+    font-size: max(1.8rem, 2.57vw);
+  }
+}
+
+/*# sourceMappingURL=src_components_sections_Skills_Skill_Skill_module_scss_module_css_f9ee138c._.single.css.map*/

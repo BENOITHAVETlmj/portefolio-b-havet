@@ -1,0 +1,442 @@
+/* [project]/src/components/sections/Hero/Hero.module.scss.module.css [app-client] (css) */
+.Hero-module-scss-module__k5_y-q__hero {
+  place-items: center;
+  min-height: 100svh;
+  padding: clamp(2rem, 4vw, 4rem) 1rem;
+  display: flex;
+  position: relative;
+  overflow: clip;
+}
+
+.Hero-module-scss-module__k5_y-q__hero__content {
+  flex-direction: column;
+  row-gap: 1rem;
+  max-width: 68rem;
+  margin-inline: 5vw;
+  display: flex;
+}
+
+@media only screen and (width >= 1024px) {
+  .Hero-module-scss-module__k5_y-q__hero__content {
+    margin-inline: 15vw;
+  }
+}
+
+.Hero-module-scss-module__k5_y-q__hero__title {
+  letter-spacing: -.02em;
+  will-change: transform, opacity, filter;
+  font-size: clamp(1.4rem, 6vw, 8rem);
+  font-weight: 800;
+  line-height: 1.05;
+}
+
+.Hero-module-scss-module__k5_y-q__hero__title span {
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.Hero-module-scss-module__k5_y-q__hero__subtitle {
+  opacity: .9;
+  font-size: clamp(1.05rem, 2.2vw, 1.375rem);
+}
+
+.Hero-module-scss-module__k5_y-q__hero__subtitle span {
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+}
+
+.Hero-module-scss-module__k5_y-q__hero__letterWrap {
+  padding-bottom: .02em;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.Hero-module-scss-module__k5_y-q__hero__letter {
+  will-change: transform, opacity;
+  display: inline-block;
+}
+
+
+/* [project]/src/components/sections/Contacts/Contacts.module.scss.module.css [app-client] (css) */
+.Contacts-module-scss-module__RLInDW__contacts {
+  flex-wrap: wrap;
+  gap: .75rem;
+  margin-top: 1rem;
+  display: flex;
+}
+
+.Contacts-module-scss-module__RLInDW__contacts__item {
+  border: 1px solid var(--border);
+  background: var(--background);
+  color: var(--foreground);
+  border-radius: .5rem;
+  align-items: center;
+  gap: .5rem;
+  padding: .5rem .75rem;
+  font-size: .9rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background .2s, color .2s;
+  display: flex;
+}
+
+.Contacts-module-scss-module__RLInDW__contacts__item svg {
+  flex-shrink: 0;
+}
+
+.Contacts-module-scss-module__RLInDW__contacts__item:hover {
+  background: var(--foreground);
+  color: var(--background);
+}
+
+
+/* [project]/src/components/layouts/Head/Head.module.scss.module.css [app-client] (css) */
+.Head-module-scss-module__AqL6Qa__header {
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  z-index: 1000;
+  background-color: #f7f2ee;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color .25s;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.Head-module-scss-module__AqL6Qa__header__content {
+  align-items: center;
+  gap: 2rem;
+  display: flex;
+}
+
+html.dark .Head-module-scss-module__AqL6Qa__header {
+  background-color: var(--nav-background);
+}
+
+
+/* [project]/src/components/layouts/Nav/Nav.module.scss.module.css [app-client] (css) */
+.Nav-module-scss-module__UAOa4a__navbar {
+  align-items: center;
+  gap: 2rem;
+  display: flex;
+}
+
+.Nav-module-scss-module__UAOa4a__navbar__link {
+  font-weight: 500;
+  text-decoration: none;
+  transition: color .3s;
+}
+
+.Nav-module-scss-module__UAOa4a__navbar__link:hover {
+  color: #00c9a7;
+}
+
+.Nav-module-scss-module__UAOa4a__navMobile {
+  position: relative;
+}
+
+.Nav-module-scss-module__UAOa4a__navMobile__burger-button {
+  cursor: pointer;
+  z-index: 100;
+  background: none;
+  border: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  display: flex;
+}
+
+.Nav-module-scss-module__UAOa4a__navMobile__burger-button .Nav-module-scss-module__UAOa4a__line {
+  transform-origin: 1px;
+  background: #1a1a1a;
+  border-radius: 10px;
+  width: 2rem;
+  height: .25rem;
+  transition: all .3s linear;
+  position: relative;
+}
+
+.Nav-module-scss-module__UAOa4a__navMobile__burger-button .Nav-module-scss-module__UAOa4a__line.Nav-module-scss-module__UAOa4a__active {
+  background: #f7f2ee;
+}
+
+.Nav-module-scss-module__UAOa4a__navMobile__burger-button.Nav-module-scss-module__UAOa4a__active span:first-child {
+  transform: rotate(45deg);
+}
+
+.Nav-module-scss-module__UAOa4a__navMobile__burger-button.Nav-module-scss-module__UAOa4a__active span:nth-child(2) {
+  opacity: 0;
+}
+
+.Nav-module-scss-module__UAOa4a__navMobile__burger-button.Nav-module-scss-module__UAOa4a__active span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.Nav-module-scss-module__UAOa4a__navMobile__menu-overlay {
+  z-index: 101;
+  opacity: 0;
+  visibility: hidden;
+  background: #00000080;
+  width: 100vw;
+  height: 100vh;
+  transition: all .3s;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.Nav-module-scss-module__UAOa4a__navMobile__menu-overlay.Nav-module-scss-module__UAOa4a__open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.Nav-module-scss-module__UAOa4a__navMobile__mobile-menu {
+  background: var(--nav-background);
+  z-index: 102;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  transition: right .3s;
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: -100%;
+}
+
+.Nav-module-scss-module__UAOa4a__navMobile__mobile-menu.Nav-module-scss-module__UAOa4a__open {
+  right: 0;
+}
+
+.Nav-module-scss-module__UAOa4a__navMobile__menu-header {
+  border-bottom: 1px solid #eee;
+  justify-content: flex-end;
+  padding: 1rem;
+  display: flex;
+}
+
+.Nav-module-scss-module__UAOa4a__navMobile__close-button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: .5rem;
+  font-size: 2rem;
+}
+
+.Nav-module-scss-module__UAOa4a__navMobile__close-button:hover {
+  color: #00c9a7;
+}
+
+.Nav-module-scss-module__UAOa4a__navMobile__menu-links {
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+  display: flex;
+}
+
+.Nav-module-scss-module__UAOa4a__navMobile__mobile-nav-link {
+  border-bottom: 1px solid #eee;
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color .3s;
+}
+
+.Nav-module-scss-module__UAOa4a__navMobile__mobile-nav-link:hover {
+  color: #00c9a7;
+}
+
+.Nav-module-scss-module__UAOa4a__overlay {
+  z-index: 9999;
+  background: #00c9a7;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  inset: 0;
+}
+
+.Nav-module-scss-module__UAOa4a__overlay__content {
+  text-align: center;
+  color: #fff;
+}
+
+.Nav-module-scss-module__UAOa4a__overlay__logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.Nav-module-scss-module__UAOa4a__overlay__label {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+html.dark .Nav-module-scss-module__UAOa4a__navMobile__mobile-menu {
+  background-color: #1a1a1a;
+}
+
+
+/* [project]/src/components/layouts/LocaleSwitcher/LocaleSwitcher.module.scss.module.css [app-client] (css) */
+.LocaleSwitcher-module-scss-module__ipVjfW__localeButton {
+  text-align: right;
+  flex: none;
+  position: relative;
+}
+
+.LocaleSwitcher-module-scss-module__ipVjfW__currentLocale {
+  text-transform: uppercase;
+  cursor: default;
+  font-weight: 500;
+}
+
+.LocaleSwitcher-module-scss-module__ipVjfW__localeList {
+  text-transform: uppercase;
+  background-color: #0000;
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+}
+
+.LocaleSwitcher-module-scss-module__ipVjfW__locale {
+  cursor: pointer;
+  opacity: .7;
+  font-weight: 500;
+}
+
+.LocaleSwitcher-module-scss-module__ipVjfW__locale:hover {
+  opacity: 1;
+}
+
+
+/* [project]/src/components/layouts/ThemeToggle/ThemeToggle.module.scss.module.css [app-client] (css) */
+.ThemeToggle-module-scss-module__ByRhqa__themeButton {
+  white-space: nowrap;
+  cursor: pointer;
+  background-color: #0000;
+  border: 1px solid gray;
+  border-radius: .375rem;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: inline-flex;
+  position: relative;
+}
+
+.ThemeToggle-module-scss-module__ByRhqa__icon {
+  width: 1.2rem;
+  height: 1.2rem;
+  transition: all .2s;
+}
+
+.ThemeToggle-module-scss-module__ByRhqa__sunIcon {
+  color: #1a1a1a;
+}
+
+.ThemeToggle-module-scss-module__ByRhqa__moonIcon {
+  color: #f7f2ee;
+  position: absolute;
+}
+
+
+/* [project]/src/components/Logo/Logo.module.scss.module.css [app-client] (css) */
+.Logo-module-scss-module__23_uaW__logo {
+  object-fit: contain;
+  user-select: none;
+  display: inline-block;
+}
+
+
+/* [project]/src/components/sections/Skills/Skill/Skill.module.scss.module.css [app-client] (css) */
+.Skill-module-scss-module__WU-rBW__section {
+  grid-template: "title"
+                 "text" 1fr
+                 "tags"
+                 / 1fr;
+  gap: 6vw 0;
+  width: 100%;
+  padding: 2rem;
+  display: grid;
+}
+
+@media (width >= 769px) {
+  .Skill-module-scss-module__WU-rBW__section {
+    padding: 4rem 2rem;
+  }
+}
+
+.Skill-module-scss-module__WU-rBW__section h4 {
+  grid-area: title;
+  margin: 0;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.Skill-module-scss-module__WU-rBW__section .Skill-module-scss-module__WU-rBW__description {
+  grid-area: text;
+}
+
+.Skill-module-scss-module__WU-rBW__section .Skill-module-scss-module__WU-rBW__description p {
+  margin-bottom: 1rem;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.Skill-module-scss-module__WU-rBW__section .Skill-module-scss-module__WU-rBW__description p:last-child {
+  margin-bottom: 0;
+}
+
+.Skill-module-scss-module__WU-rBW__section .Skill-module-scss-module__WU-rBW__tags {
+  flex-wrap: wrap;
+  grid-area: tags;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.Skill-module-scss-module__WU-rBW__section .Skill-module-scss-module__WU-rBW__tags > li {
+  color: var(--color);
+  --height: max(2rem, 2.5vw);
+  border: clamp(.1rem, .3vw, .3rem) solid var(--color);
+  border-radius: var(--height);
+  text-transform: uppercase;
+  font-size: max(1rem, 1.57vw);
+  line-height: var(--height);
+  align-items: center;
+  padding: 0 max(1rem, 1.75vw);
+  display: flex;
+}
+
+@media (width >= 769px) {
+  .Skill-module-scss-module__WU-rBW__section .Skill-module-scss-module__WU-rBW__tags > li {
+    --height: max(3rem, 3.5vw);
+    border-radius: var(--height);
+    padding: 0 max(1rem, 1.25vw);
+    font-size: max(1.8rem, 2.57vw);
+  }
+}
+
+
+/* [project]/src/components/sections/Skills/Skills.module.scss.module.css [app-client] (css) */
+.Skills-module-scss-module__aaRs6a__skills_list {
+  flex-direction: column;
+  row-gap: 5rem;
+  width: 100%;
+  display: flex;
+}
+
+
+/*# sourceMappingURL=src_components_6d0e371b._.css.map*/

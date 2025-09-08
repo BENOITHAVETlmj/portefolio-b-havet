@@ -1,0 +1,36 @@
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.contacts__item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+
+  background: var(--background);
+  color: var(--foreground);
+
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+
+  svg {
+    flex-shrink: 0;
+  }
+
+  &:hover {
+    background: var(--foreground);
+    color: var(--background);
+  }
+}

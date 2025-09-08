@@ -1,0 +1,31 @@
+/* [project]/src/components/layouts/ThemeToggle/ThemeToggle.module.scss.module.css [app-client] (css) */
+.ThemeToggle-module-scss-module__ByRhqa__themeButton {
+  white-space: nowrap;
+  cursor: pointer;
+  background-color: #0000;
+  border: 1px solid gray;
+  border-radius: .375rem;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: inline-flex;
+  position: relative;
+}
+
+.ThemeToggle-module-scss-module__ByRhqa__icon {
+  width: 1.2rem;
+  height: 1.2rem;
+  transition: all .2s;
+}
+
+.ThemeToggle-module-scss-module__ByRhqa__sunIcon {
+  color: #1a1a1a;
+}
+
+.ThemeToggle-module-scss-module__ByRhqa__moonIcon {
+  color: #f7f2ee;
+  position: absolute;
+}
+
+/*# sourceMappingURL=src_components_layouts_ThemeToggle_ThemeToggle_module_scss_module_css_f9ee138c._.single.css.map*/

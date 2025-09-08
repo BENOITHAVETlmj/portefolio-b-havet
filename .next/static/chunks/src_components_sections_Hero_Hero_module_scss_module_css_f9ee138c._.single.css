@@ -1,0 +1,60 @@
+/* [project]/src/components/sections/Hero/Hero.module.scss.module.css [app-client] (css) */
+.Hero-module-scss-module__k5_y-q__hero {
+  place-items: center;
+  min-height: 100svh;
+  padding: clamp(2rem, 4vw, 4rem) 1rem;
+  display: flex;
+  position: relative;
+  overflow: clip;
+}
+
+.Hero-module-scss-module__k5_y-q__hero__content {
+  flex-direction: column;
+  row-gap: 1rem;
+  max-width: 68rem;
+  margin-inline: 5vw;
+  display: flex;
+}
+
+@media only screen and (width >= 1024px) {
+  .Hero-module-scss-module__k5_y-q__hero__content {
+    margin-inline: 15vw;
+  }
+}
+
+.Hero-module-scss-module__k5_y-q__hero__title {
+  letter-spacing: -.02em;
+  will-change: transform, opacity, filter;
+  font-size: clamp(1.4rem, 6vw, 8rem);
+  font-weight: 800;
+  line-height: 1.05;
+}
+
+.Hero-module-scss-module__k5_y-q__hero__title span {
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.Hero-module-scss-module__k5_y-q__hero__subtitle {
+  opacity: .9;
+  font-size: clamp(1.05rem, 2.2vw, 1.375rem);
+}
+
+.Hero-module-scss-module__k5_y-q__hero__subtitle span {
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+}
+
+.Hero-module-scss-module__k5_y-q__hero__letterWrap {
+  padding-bottom: .02em;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.Hero-module-scss-module__k5_y-q__hero__letter {
+  will-change: transform, opacity;
+  display: inline-block;
+}
+
+/*# sourceMappingURL=src_components_sections_Hero_Hero_module_scss_module_css_f9ee138c._.single.css.map*/

@@ -1,0 +1,27 @@
+.header {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  justify-content: space-between;
+  background-color: $white;
+  transition: background-color 0.25s ease;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+
+:global(html.dark) .header {
+  background-color: var(--nav-background);
+}

@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/components/sections/Hero/Hero.module.scss.module.css"],"sourcesContent":[".hero{position:relative;min-height:100svh;display:flex;justify-items:center;align-items:center;padding:clamp(2rem,4vw,4rem) 1rem;overflow:clip}.hero__content{display:flex;flex-direction:column;row-gap:1rem;max-width:68rem;margin-inline:5vw}@media only screen and (min-width: 1024px){.hero__content{margin-inline:15vw}}.hero__title{font-size:clamp(1.4rem,6vw,8rem);line-height:1.05;letter-spacing:-0.02em;font-weight:800;will-change:transform,opacity,filter}.hero__title span{will-change:transform,opacity;backface-visibility:hidden;transform-style:preserve-3d}.hero__subtitle{font-size:clamp(1.05rem,2.2vw,1.375rem);opacity:.9}.hero__subtitle span{will-change:transform,opacity;backface-visibility:hidden}.hero__letterWrap{display:inline-block;overflow:hidden;padding-bottom:.02em}.hero__letter{display:inline-block;will-change:transform,opacity}"],"names":[],"mappings":"AAAA;;;;;;;;;AAA+I;;;;;;;;AAAiG;EAA2C;;;;;AAAmC;;;;;;;;AAA2I;;;;;;AAAuG;;;;;AAAmE;;;;;AAA8E;;;;;;AAA4E"}}]
+}

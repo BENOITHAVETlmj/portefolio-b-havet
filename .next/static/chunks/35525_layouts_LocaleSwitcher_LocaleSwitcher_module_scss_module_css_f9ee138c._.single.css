@@ -1,0 +1,33 @@
+/* [project]/src/components/layouts/LocaleSwitcher/LocaleSwitcher.module.scss.module.css [app-client] (css) */
+.LocaleSwitcher-module-scss-module__ipVjfW__localeButton {
+  text-align: right;
+  flex: none;
+  position: relative;
+}
+
+.LocaleSwitcher-module-scss-module__ipVjfW__currentLocale {
+  text-transform: uppercase;
+  cursor: default;
+  font-weight: 500;
+}
+
+.LocaleSwitcher-module-scss-module__ipVjfW__localeList {
+  text-transform: uppercase;
+  background-color: #0000;
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+}
+
+.LocaleSwitcher-module-scss-module__ipVjfW__locale {
+  cursor: pointer;
+  opacity: .7;
+  font-weight: 500;
+}
+
+.LocaleSwitcher-module-scss-module__ipVjfW__locale:hover {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=35525_layouts_LocaleSwitcher_LocaleSwitcher_module_scss_module_css_f9ee138c._.single.css.map*/

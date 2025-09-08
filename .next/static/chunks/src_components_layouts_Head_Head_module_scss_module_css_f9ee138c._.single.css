@@ -1,0 +1,30 @@
+/* [project]/src/components/layouts/Head/Head.module.scss.module.css [app-client] (css) */
+.Head-module-scss-module__AqL6Qa__header {
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  z-index: 1000;
+  background-color: #f7f2ee;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color .25s;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.Head-module-scss-module__AqL6Qa__header__content {
+  align-items: center;
+  gap: 2rem;
+  display: flex;
+}
+
+html.dark .Head-module-scss-module__AqL6Qa__header {
+  background-color: var(--nav-background);
+}
+
+/*# sourceMappingURL=src_components_layouts_Head_Head_module_scss_module_css_f9ee138c._.single.css.map*/
