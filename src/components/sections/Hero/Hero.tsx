@@ -4,8 +4,8 @@ import classNames from "classnames/bind";
 import React, { useRef } from "react";
 import styles from "./Hero.module.scss";
 import { useTranslations } from "next-intl";
-import { motion } from "motion/react";
 import { Contacts } from "../Contacts/Contacts";
+import { motion } from 'framer-motion';
 
 const cx = classNames.bind(styles);
 

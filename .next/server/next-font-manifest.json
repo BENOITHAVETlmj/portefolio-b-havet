@@ -1,10 +1,1 @@
-{
-  "app": {
-    "[project]/src/app/[locale]/page": [
-      "static/media/Yourmate-s.p.a1a3793e.ttf"
-    ]
-  },
-  "appUsingSizeAdjust": true,
-  "pages": {},
-  "pagesUsingSizeAdjust": false
-}
+{"pages":{},"app":{"/Users/benhavet/portefolio-b-havet/src/app/[locale]/layout":["static/media/3896790c345cf8ed-s.p.ttf"]},"appUsingSizeAdjust":true,"pagesUsingSizeAdjust":false}

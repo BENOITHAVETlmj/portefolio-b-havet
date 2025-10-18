@@ -1,10 +1,10 @@
 "use client";
 import React, { useState, useTransition } from "react";
 import { useLocale } from "next-intl";
-import { usePathname, useRouter } from "@/i18n/navigation";
-import { routing } from "@/i18n/routing";
 import styles from "./LocaleSwitcher.module.scss";
 import classNames from "classnames/bind";
+import { routing } from "@/src/i18n/routing";
+import { usePathname, useRouter } from "@/src/i18n/navigation";
 
 const cx = classNames.bind(styles);
 

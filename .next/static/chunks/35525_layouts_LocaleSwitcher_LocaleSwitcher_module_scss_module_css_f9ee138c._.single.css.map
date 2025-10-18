@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/components/layouts/LocaleSwitcher/LocaleSwitcher.module.scss.module.css"],"sourcesContent":[".localeButton{flex:0 0 auto;text-align:right;position:relative}.currentLocale{text-transform:uppercase;cursor:default;font-weight:500}.localeList{list-style:none;text-transform:uppercase;position:absolute;top:100%;right:0;background-color:rgba(0,0,0,0)}.locale{cursor:pointer;opacity:.7;font-weight:500}.locale:hover{opacity:1}"],"names":[],"mappings":"AAAA;;;;;;AAA+D;;;;;;AAAuE;;;;;;;;;AAAuH;;;;;;AAAkD"}}]
-}

@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/components/sections/Contacts/Contacts.module.scss.module.css"],"sourcesContent":[".contacts{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1rem}.contacts__item{display:flex;align-items:center;gap:.5rem;padding:.5rem .75rem;border:1px solid var(--border);border-radius:.5rem;background:var(--background);color:var(--foreground);text-decoration:none;font-size:.9rem;font-weight:500;transition:background .2s ease,color .2s ease}.contacts__item svg{flex-shrink:0}.contacts__item:hover{background:var(--foreground);color:var(--background)}"],"names":[],"mappings":"AAAA;;;;;;;AAAiE;;;;;;;;;;;;;;;AAA0R;;;;AAAkC"}}]
-}

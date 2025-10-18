@@ -1,11 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
 import styles from "./Cards.module.scss";
 import classNames from "classnames/bind";
-import { Orientation, useOrientation } from "@/hooks/useOrientation";
-import { useAboveTablet } from "@/hooks/useMediaQuery";
 import { Cursor } from "../Cursor/Cursor";
 import { useScroll, useTransform, motion, useInView } from "framer-motion";
-import { useRouter } from "@/i18n/navigation";
+import { Orientation, useOrientation } from "../../hooks/useOrientation";
+import { useAboveTablet } from "../../hooks/useMediaQuery";
+import { useRouter } from "../../i18n/navigation";
 
 const cx = classNames.bind(styles);
 
@@ -112,7 +112,7 @@ const Cards = ({
         onClick={handleCardClick}
         role="button"
         tabIndex={0}
-        onMouseMove={(e) => {
+        onMouseMove={(e: any) => {
           if (!isLaptop) return;
           const rect = containerRef.current!.getBoundingClientRect();
           const padding = 5;

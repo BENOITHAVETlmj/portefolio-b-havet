@@ -3,13 +3,13 @@
 import classNames from "classnames/bind";
 import React, { useState } from "react";
 import styles from "./Nav.module.scss";
-import { useBelowLaptop } from "@/hooks/useMediaQuery";
 import { LocaleSwitcher } from "../LocaleSwitcher/LocaleSwitcher";
 import { ThemeToggle } from "../ThemeToggle/ThemeToggle";
 import { useTheme } from "next-themes";
-import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import { AnimatePresence, motion } from "framer-motion";
+import { useBelowLaptop } from "../../../hooks/useMediaQuery";
+import { Link } from "../../../i18n/navigation";
 
 const cx = classNames.bind(styles);
 

@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/benhavet/portefolio-b-havet/src/app/layout.tsx"],"sourcesContent":["export const metadata = {\n  title: \"Benoît Havet\",\n  description: \"\",\n  icons: {\n    icon: \"/favicon.ico\",\n  },\n};\n\nexport default async function RootLayout({\n  children,\n}: Readonly<{\n  children: React.ReactNode;\n}>) {\n  return children;\n}\n"],"names":[],"mappings":";;;;AAAO,MAAM,WAAW;IACtB,OAAO;IACP,aAAa;IACb,OAAO;QACL,MAAM;IACR;AACF;AAEe,eAAe,WAAW,EACvC,QAAQ,EAGR;IACA,OAAO;AACT","debugId":null}}]
-}
