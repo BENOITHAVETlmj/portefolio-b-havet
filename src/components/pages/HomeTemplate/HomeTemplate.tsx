@@ -4,6 +4,7 @@ import React from "react";
 import { Hero } from "../../sections/Hero/Hero";
 import { Head } from "../../layouts/Head/Head";
 import Skills from "../../sections/Skills/Skills";
+import TechBanner from "../../TechBanner/TechBanner";
 
 const HomeTemplate = () => {
   return (
@@ -11,6 +12,7 @@ const HomeTemplate = () => {
       <Head />
       <main>
         <Hero />
+        <TechBanner />
         <Skills />
       </main>
     </>

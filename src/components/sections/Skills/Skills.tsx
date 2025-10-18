@@ -9,17 +9,32 @@ const cx = classNames.bind(styles);
 
 const skills = [
   {
-    tags: ["Mobile App", "PWA", "Performance", "Design System"],
+    tags: ["SPA", "Mobile App", "PWA", "Performance", 'Tracking', 'Testing'],
     backgroundColor: "#00C9A7",
     dynamicColor: "#FFFFFF",
   },
   {
-    tags: ["UI Design", "UX Design", "Showcase Site", "Ecommerce Site"],
+    tags: [
+      "UI/UX Design",
+      "User Experience",
+      "Design Collaboration",
+      "Micro-Interactions",
+      "Prototyping",
+      "Motion Design"
+    ],
     backgroundColor: "#B3B3B3",
     dynamicColor: "#000000",
   },
   {
-    tags: ["Visual Identity", "Animation", "Prototyping", "UX Audit"],
+    tags: [
+      "Headless CMS",
+      "API Integration",
+      "Data management",
+      "Scalability",
+      "Automation",
+      "Continuous Deployment",
+      "Architecture",
+    ],
     backgroundColor: "#FF6B6B",
     dynamicColor: "#FFFFFF",
   },

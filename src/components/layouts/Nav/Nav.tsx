@@ -95,7 +95,8 @@ export const Nav = () => {
           </nav>
         </>
       ) : (
-        <>
+        <>  
+        <LocaleSwitcher />
           <div className={cx("navMobile")}>
             <button
               className={cx("navMobile__burger-button", { active: isOpen })}
@@ -106,7 +107,7 @@ export const Nav = () => {
               <span className={cx("line", { active: theme === "dark" })} />
               <span className={cx("line", { active: theme === "dark" })} />
             </button>
-
+          
             <div
               className={cx("navMobile__menu-overlay", { open: isOpen })}
               onClick={closeMenu}
@@ -120,8 +121,9 @@ export const Nav = () => {
                   aria-label="Fermer le menu"
                 >
                   ×
-                </button>
+                </button>  
               </div>
+            
               <div className={cx("navMobile__menu-links")}>
                 {dataNav.map((item, index) => (
                   <div key={index}>

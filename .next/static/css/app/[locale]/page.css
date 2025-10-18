@@ -172,7 +172,7 @@ html.dark .Head_header__i8PxG {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.5);
+  background: var(--background);
   z-index: 101;
   opacity: 0;
   visibility: hidden;
@@ -403,4 +403,66 @@ html.dark .Nav_navMobile__mobile-menu__AETvt {
   flex-direction: column;
   row-gap: 5rem;
   width: 100%;
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[14].oneOf[7].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[14].oneOf[7].use[5]!./src/components/TechBanner/TechBanner.module.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.TechBanner_banner__WpaL8 {
+  overflow: hidden;
+  height: 50svh;
+  width: 100%;
+  padding: 2rem 0;
+  background: transparent;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.TechBanner_track__CTf0g {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.5rem;
+  white-space: nowrap;
+  width: max-content;
+}
+
+.TechBanner_item__2uelG {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  padding: 0.6rem 1.2rem;
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  color: var(--foreground);
+  font-weight: 500;
+  gap: 0.5rem;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+.TechBanner_item__2uelG:hover {
+  transform: scale(1.05);
+  border-color: var(--foreground);
+}
+
+.TechBanner_icon__r9vyv {
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.TechBanner_label__9on4g {
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+.TechBanner_dot__zAfI1 {
+  flex-shrink: 0;
+  color: var(--foreground);
+  font-size: 1.4rem;
 }
