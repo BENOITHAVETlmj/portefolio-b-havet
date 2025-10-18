@@ -36,17 +36,33 @@ a {
 .customFont {
   font-family: var(--font-custom), "Helvetica", Arial, sans-serif;
 }
+
 /*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[3].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[14].oneOf[3].use[2]!./node_modules/next/font/local/target.css?{"path":"src/app/fonts.ts","import":"","arguments":[{"src":[{"path":"../app/fonts/Yourmate.ttf","weight":"400","style":"normal"}],"variable":"--font-custom","display":"swap"}],"variableName":"customFont"} ***!
   \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 @font-face {
-font-family: 'customFont';
-src: url(/_next/static/media/3896790c345cf8ed-s.p.ttf) format('truetype');
-font-display: swap;
-font-weight: 400;
-font-style: normal;
-}@font-face {font-family: 'customFont Fallback';src: local("Arial");ascent-override: 61.96%;descent-override: 12.92%;line-gap-override: 1.85%;size-adjust: 140.90%
-}.__className_4ca63d {font-family: 'customFont', 'customFont Fallback';font-weight: 400;font-style: normal
-}.__variable_4ca63d {--font-custom: 'customFont', 'customFont Fallback'
+  font-family: 'customFont';
+  src: url(/_next/static/media/3896790c345cf8ed-s.p.ttf) format('truetype');
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
 }
 
+@font-face {
+  font-family: 'customFont Fallback';
+  src: local("Arial");
+  ascent-override: 61.96%;
+  descent-override: 12.92%;
+  line-gap-override: 1.85%;
+  size-adjust: 140.90%
+}
+
+.__className_4ca63d {
+  font-family: 'customFont', 'customFont Fallback';
+  font-weight: 400;
+  font-style: normal
+}
+
+.__variable_4ca63d {
+  --font-custom: 'customFont', 'customFont Fallback'
+}

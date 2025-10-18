@@ -5,6 +5,7 @@ import { Hero } from "../../sections/Hero/Hero";
 import { Head } from "../../layouts/Head/Head";
 import Skills from "../../sections/Skills/Skills";
 import TechBanner from "../../TechBanner/TechBanner";
+import CvOverlay from "../../CVOverlay/CVOverlay";
 
 const HomeTemplate = () => {
   return (
@@ -12,6 +13,7 @@ const HomeTemplate = () => {
       <Head />
       <main>
         <Hero />
+        <CvOverlay />
         <TechBanner />
         <Skills />
       </main>
