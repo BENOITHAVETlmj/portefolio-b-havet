@@ -49,7 +49,7 @@
       border: clamp(0.1rem, 0.3vw, 0.3rem) solid var(--color);
       border-radius: var(--height);
       font-size: max(1rem, 1.57vw);
-      padding: 0 max(1rem, 1.75vw);
+      padding: 0 max(1.5rem, 1.75vw);
       text-transform: uppercase;
       align-items: center;
       display: flex;
@@ -60,7 +60,7 @@
         --height: max(3rem, 3.5vw);
         border-radius: var(--height);
         font-size: max(1.8rem, 2.57vw);
-        padding: 0 max(1rem, 1.25vw);
+        padding: 0 max(1.5rem, 1.25vw);
       }
     }
   }

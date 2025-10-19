@@ -22,6 +22,8 @@ import {
   SiContentful,
   SiFigma,
 } from "react-icons/si";
+import { Orientation, useOrientation } from "@/src/hooks/useOrientation";
+import { useAboveTablet } from "@/src/hooks/useMediaQuery";
 
 const cx = classNames.bind(styles);
 
@@ -70,9 +72,11 @@ const technos = [
 
 const TechBanner: React.FC = () => {
   const rows = [technos, [...technos].reverse(), technos];
-
+  const orientation = useOrientation();
+  const isPortrait = orientation === Orientation.Portrait;
+  
   return (
-    <div className={cx("banner")}>
+    <div className={cx("banner", {'banner__full-height': !isPortrait})}>
       {rows.map((row, i) => (
         <motion.div
           key={i}

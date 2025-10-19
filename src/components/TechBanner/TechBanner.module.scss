@@ -9,6 +9,9 @@
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
+    &__full-height {
+      height: 70svh;
+    }
   }
   
   .track {
