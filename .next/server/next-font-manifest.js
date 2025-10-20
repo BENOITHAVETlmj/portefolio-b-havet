@@ -1,1 +1,1 @@
-self.__NEXT_FONT_MANIFEST='{"pages":{},"app":{"/Users/benhavet/portefolio-b-havet/src/app/[locale]/layout":["static/media/3896790c345cf8ed-s.p.ttf"]},"appUsingSizeAdjust":true,"pagesUsingSizeAdjust":false}';
+self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{\"/Users/benhavet/portefolio-b-havet/src/app/[locale]/layout\":[\"static/media/3896790c345cf8ed-s.p.ttf\"]},\"appUsingSizeAdjust\":true,\"pagesUsingSizeAdjust\":false}"

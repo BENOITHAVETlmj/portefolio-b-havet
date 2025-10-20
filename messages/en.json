@@ -28,6 +28,10 @@
       "description3": "Ensuring maintainability, scalability, and smooth deployment for long-term performance."
     }
   ],
+  "CvOverlay": {
+    "openButton": "My resume",
+    "downLoadButton": "Download the resume"
+  },
   "Contacts": {
     "title": "Shall we talk?"
   }

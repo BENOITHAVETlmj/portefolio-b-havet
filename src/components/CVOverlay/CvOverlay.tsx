@@ -3,12 +3,18 @@ import { motion, AnimatePresence } from "framer-motion";
 import classNames from "classnames/bind";
 import styles from "./CvOverlay.module.scss";
 import { X } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 const cx = classNames.bind(styles);
 
 const CvOverlay: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const cvUrl = "/CV_HAVET_BENOIT.pdf";
+
+  const t = useTranslations("CvOverlay");
+
+  const openButton = t("openButton");
+  const downLoadButton = t("downLoadButton");
 
   return (
     <>
@@ -17,7 +23,7 @@ const CvOverlay: React.FC = () => {
         onClick={() => setIsOpen(true)}
         whileHover={{ x: -5 }}
       >
-        <span>Mon CV</span>
+        <span>{openButton}</span>
       </motion.div>
 
       <AnimatePresence>
@@ -44,7 +50,7 @@ const CvOverlay: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Télécharger le CV
+                {downLoadButton}
               </a>
             </div>
 

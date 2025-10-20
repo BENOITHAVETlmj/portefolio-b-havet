@@ -28,6 +28,10 @@
       "description3": "Maintenance, scalabilité et automatisation du déploiement pour un produit durable."
     }
   ],
+  "CvOverlay": {
+    "openButton": "Mon cv",
+    "downLoadButton": "Télécharger le CV"
+  },
   "Contacts": {
     "title": "On en parle?"
   }
