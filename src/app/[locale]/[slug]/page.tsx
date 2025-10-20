@@ -6,7 +6,7 @@ export default async function ProjectDetailsPage(props: {
   params: tParamsSlug;
 }) {
   const { slug, locale } = await props.params;
-  const t = await getTranslations({ locale, namespace: "Projects" });
+  const t = await getTranslations({ locale });
   setRequestLocale(locale);
   if (!t.has(`${slug}.id`)) {
     notFound();
