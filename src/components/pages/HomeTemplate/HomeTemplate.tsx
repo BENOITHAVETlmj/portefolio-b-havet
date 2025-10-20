@@ -6,6 +6,8 @@ import { Head } from "../../layouts/Head/Head";
 import Skills from "../../sections/Skills/Skills";
 import TechBanner from "../../TechBanner/TechBanner";
 import CvOverlay from "../../CVOverlay/CvOverlay";
+import { AnimatedThumbnails } from "../../AnimatedThumbnails/AnimatedThumbnails";
+import { payload } from "../../Cards/Cards";
 
 const HomeTemplate = () => {
   return (
@@ -16,6 +18,7 @@ const HomeTemplate = () => {
         <CvOverlay />
         <TechBanner />
         <Skills />
+        <AnimatedThumbnails cards={payload?.cards}/>
       </main>
     </>
   );

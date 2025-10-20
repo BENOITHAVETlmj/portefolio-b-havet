@@ -1,0 +1,27 @@
+.animated-thumbnails {
+  padding: 10rem 2rem;
+
+  &__grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: clamp(3rem, 4vw, 5rem);
+    gap: clamp(3rem, 4vw, 5rem);
+
+    @media (min-width: 769px) {
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: space-between;
+      column-gap: clamp(3rem, 4vw, 5rem);
+      row-gap: clamp(3rem, 4vw, 5rem);
+      align-items: flex-start;
+      &.odd-number > *:nth-child(even) {
+        justify-self: end;
+      }
+
+      &.odd-number > :last-child {
+        grid-column: 1 / -1 !important;
+        justify-self: center;
+      }
+    }
+  }
+}
