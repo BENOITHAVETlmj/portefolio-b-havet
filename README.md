@@ -1,5 +1,53 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+# 🌐 Portfolio – Benoît Havet
+
+This project is an **interactive portfolio** built with **React**, **Next.js**, and **TypeScript**, showcasing my web development skills and projects.  
+The application features smooth animations, multilingual support, and an optimized user experience.
+
+---
+
+## 🚀 Main Technologies
+
+| Technology | Description |
+|-------------|-------------|
+| **Next.js (App Router)** | React framework enabling SSR (Server-Side Rendering), SSG (Static Site Generation), and modern routing. |
+| **React.js** | JavaScript library for building dynamic, reactive user interfaces. |
+| **TypeScript** | Strongly typed superset of JavaScript for safer and more maintainable code. |
+| **Framer Motion** | Powerful animation library for React, used for transitions and motion effects. |
+| **SASS Modules (.module.scss)** | Modular SCSS for component-level styling with variables, mixins, and nesting. |
+| **i18n (Internationalization)** | Multilanguage support with structured translation files (FR / EN / KO). |
+
+---
+
+## 🧭 Features
+
+- 🌍 **Multilingual support**: French, English, and Korean.  
+- ⚙️ **Clean architecture**: modular, typed components.  
+- 🧠 **Smooth animations**: hover and transition effects using *Framer Motion*.  
+- 🎨 **Responsive design**: fully optimized for mobile, tablet, and desktop.  
+- 🔗 **Seamless navigation**: dynamic routes and transitions via *Next.js App Router*.  
+- 🧱 **Scoped SASS styling**: isolated styles per component.  
+- ⚡ **High performance**: SSR and static optimization deployed on *Vercel*.  
+
+---
+
+## 🌍 Deployment
+
+The project is deployed on **Vercel** for development and testing:  
+👉 [https://portefolio-b-havet.vercel.app/fr](https://portefolio-b-havet.vercel.app/fr)
+
+---
+
+## 📂 Project Structure
+src/
+├── app/ # Next.js App Router pages
+├── components/ # Reusable React components
+├── styles/ # SCSS modules and global styles
+├── translations/ # i18n translation files (FR / EN / KO)
+├── hooks/ # Custom React hooks
+└── utils/ # Helper functions and configuration
+
 ## Getting Started
 
 First, run the development server:
@@ -31,6 +79,4 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
