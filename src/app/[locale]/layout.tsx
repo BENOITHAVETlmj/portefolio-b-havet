@@ -62,6 +62,7 @@ export const metadata: Metadata = {
     languages: {
       "fr": "https://portefolio-b-havet.vercel.app/fr",
       "en": "https://portefolio-b-havet.vercel.app/en",
+      "kr": "https://portefolio-b-havet.vercel.app/kr",
     },
   },
   category: "technology",
