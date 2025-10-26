@@ -7,7 +7,6 @@ import { Cursor } from "../Cursor/Cursor";
 import { useScroll, useTransform, motion, useInView } from "framer-motion";
 import { Orientation, useOrientation } from "../../hooks/useOrientation";
 import { useAboveTablet } from "../../hooks/useMediaQuery";
-import { useRouter } from "../../i18n/navigation";
 
 type CardType = {
   imageUrlPortrait?: string;
@@ -33,7 +32,7 @@ export const payload = {
       imageUrlLandscape: "https://api.microlink.io/?url=https://micra.nissan.fr&screenshot=true&meta=false&embed=screenshot.url",
       mediaWidth: "40vw",
       mediaheight: "50vh",
-      slug: "micra",
+      slug: "Nissan micra",
       hoverLink: "https://micra.nissan.fr",
     },
     {
@@ -41,7 +40,7 @@ export const payload = {
       imageUrlLandscape: "https://api.microlink.io/?url=https://en.allnewpatrol.nissan-saudiarabia.com&screenshot=true&meta=false&embed=screenshot.url",
       mediaWidth: "40vw",
       mediaheight: "50vh",
-      slug: "allnewpatrol",
+      slug: "Nissan allnewpatrol",
       hoverLink: "https://en.allnewpatrol.nissan-saudiarabia.com",
     },
     {
@@ -50,7 +49,7 @@ export const payload = {
       imageUrlLandscape: "https://api.microlink.io/?url=https://silence-mobility.nissan.fr&screenshot=true&meta=false&embed=screenshot.url",
       mediaheight: "35vh",
       mediaWidth: "35vw",
-      slug: "nano",
+      slug: "Nissan nano",
       hoverLink: "https://silence-mobility.nissan.fr",
     },
     {
@@ -86,7 +85,8 @@ const Cards = ({
   marginBottom,
   marginRight,
   marginLeft,
-  hoverLink, 
+  hoverLink,
+  slug 
 }: {
   imageUrlPortrait?: string;
   imageUrlLandscape?: string;
@@ -243,11 +243,14 @@ const Cards = ({
       </motion.div>
     )}
 
-    <div
-      className={cx("content", {
-        "content--inline": displayInLine,
-      })}
-    />
+     {slug && <div
+        className={cx("content", {
+          "content--inline": displayInLine,
+        })}
+      >
+       {slug}
+      </div>
+      }
   </>
   );
 };

@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import Skill from "./Skill/Skill";
 import classNames from "classnames/bind";
 import styles from "./Skills.module.scss";
@@ -9,7 +9,7 @@ const cx = classNames.bind(styles);
 
 const skills = [
   {
-    tags: ["SPA", "Mobile App", "PWA", "Performance", 'Tracking', 'Testing'],
+    tags: ["SPA", "Mobile App", "PWA", "Performance", "Tracking", "Testing"],
     backgroundColor: "#00C9A7",
     dynamicColor: "#FFFFFF",
   },
@@ -20,7 +20,7 @@ const skills = [
       "Design Collaboration",
       "Micro-Interactions",
       "Prototyping",
-      "Motion Design"
+      "Motion Design",
     ],
     backgroundColor: "#B3B3B3",
     dynamicColor: "#000000",
@@ -42,9 +42,7 @@ const skills = [
 
 const Skills = () => {
   const t = useTranslations("Skills");
-
   const containerRef = useRef(null);
-
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start start", "end end"],
@@ -52,16 +50,18 @@ const Skills = () => {
 
   const inputRange = skills.map((_, i) => i / (skills.length - 1));
   const outputRange = skills.map((s) => s.backgroundColor);
-  const outputColor = skills.map((s) => s.dynamicColor);
-
   const background = useTransform(scrollYProgress, inputRange, outputRange);
-  const colorMV = useTransform(scrollYProgress, inputRange, outputColor);
 
-  const [dynamicColor, setDynamicColor] = React.useState(outputColor[0]);
-  React.useEffect(() => {
-    const unsubscribe = colorMV.on("change", (v) => setDynamicColor(v));
+  const [dynamicColor, setDynamicColor] = useState(skills[0].dynamicColor);
+
+  useEffect(() => {
+    const unsubscribe = scrollYProgress.on("change", (v) => {
+      const index = Math.floor(v * (skills.length - 0.00001) * 1.01);
+      const current = skills[Math.min(index, skills.length - 1)];
+      setDynamicColor(current.dynamicColor);
+    });
     return unsubscribe;
-  }, [colorMV]);
+  }, [scrollYProgress]);
 
   return (
     <motion.section
@@ -71,6 +71,8 @@ const Skills = () => {
         background,
         minHeight: "100vh",
         padding: "4rem 2rem",
+        color: dynamicColor,
+        transition: "color 0.6s cubic-bezier(0.4, 0, 0.2, 1)",
       }}
       id="skills"
     >

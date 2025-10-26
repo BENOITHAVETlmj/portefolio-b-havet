@@ -37,11 +37,12 @@ export const AnimatedThumbnails: React.FC<AnimatedThumbnailsProps> = ({
         })}
       >
         {cards.map((card, index) => (
-          <Link key={index} href={`/${card.slug}`} locale={locale as string}>
+          <div key={index}>
             <Cards
               {...card}
+              key={index}
             />
-          </Link>
+          </div>
         ))}
       </div>
     </section>
