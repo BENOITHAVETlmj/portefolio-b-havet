@@ -1,8 +1,6 @@
 import React from "react";
 import styles from "./AnimatedThumbnails.module.scss";
 import classNames from "classnames/bind";
-import { useParams } from "next/navigation";
-import Link from "next/link";
 import Cards from "../Cards/Cards";
 
 const cx = classNames.bind(styles);
@@ -27,7 +25,6 @@ export const AnimatedThumbnails: React.FC<AnimatedThumbnailsProps> = ({
   cards,
 }) => {
   const isOdd = cards.length % 2 !== 0;
-  const { locale } = useParams();
 
   return (
     <section className={cx("animated-thumbnails")} id="projects">

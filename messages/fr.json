@@ -34,5 +34,8 @@
   },
   "Contacts": {
     "title": "On en parle?"
+  },
+  "Projects": {
+    "disclaimer": "*Les projets présentés ont été réalisés en équipe pour différents clients ou employeurs. J’y mentionne uniquement les tâches dont j’étais responsable (front-end, intégration, UI/UX) et je ne revendique pas la propriété des sites présentés."
   }
 }

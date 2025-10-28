@@ -34,5 +34,8 @@
   },
   "Contacts": {
     "title": "Shall we talk?"
+  },
+  "Projects": {
+    "disclaimer": "*The projects presented were team efforts carried out for various clients or employers. I only mention the tasks I was personally responsible for (front-end, integration, UI/UX) and do not claim ownership of the showcased websites."
   }
 }

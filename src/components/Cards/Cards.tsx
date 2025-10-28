@@ -7,6 +7,7 @@ import { Cursor } from "../Cursor/Cursor";
 import { useScroll, useTransform, motion, useInView } from "framer-motion";
 import { Orientation, useOrientation } from "../../hooks/useOrientation";
 import { useAboveTablet } from "../../hooks/useMediaQuery";
+import { useTranslations } from "next-intl";
 
 type CardType = {
   imageUrlPortrait?: string;
@@ -86,7 +87,7 @@ const Cards = ({
   marginRight,
   marginLeft,
   hoverLink,
-  slug 
+  slug,
 }: {
   imageUrlPortrait?: string;
   imageUrlLandscape?: string;
@@ -143,6 +144,9 @@ const Cards = ({
   const videoRef = useRef<HTMLVideoElement>(null);
 
   const isInView = useInView(containerRef, { amount: 0.8 });
+
+  const t = useTranslations("Projects");
+  const disclaimer = t("disclaimer");
 
   useEffect(() => {
     const video = videoRef.current;
@@ -249,6 +253,14 @@ const Cards = ({
         })}
       >
        {slug}
+      </div>
+      }
+      {disclaimer && <div
+        className={cx("content__disclaimer", {
+          "content--inline": displayInLine,
+        })}
+      >
+       {disclaimer}
       </div>
       }
   </>
